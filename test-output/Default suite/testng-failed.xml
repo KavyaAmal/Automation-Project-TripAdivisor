@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Testpage.HomepgTest">
+        <methods>
+          <include name="titleverification"/>
+          <include name="setUp"/>
+          <include name="logoverification"/>
+        </methods>
+      </class> <!-- Testpage.HomepgTest -->
+      <class name="Testpage.SearchpgTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="datepicker"/>
+        </methods>
+      </class> <!-- Testpage.SearchpgTest -->
+      <class name="Testpage.LinksTest">
+        <methods>
+          <include name="links"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testpage.LinksTest -->
+      <class name="Testpage.ScreenshotTest">
+        <methods>
+          <include name="testScreenshot"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Testpage.ScreenshotTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
