@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\kvjos\AppData\Local\Temp\testng-eclipse-1748846652\testng-customsuite.xml</span>
+                    <span>C:\Users\kvjos\AppData\Local\Temp\testng-eclipse-620177262\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -248,7 +248,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kvjos\AppData\Local\Temp\testng-eclipse-1748846652\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kvjos\AppData\Local\Temp\testng-eclipse-620177262\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -257,10 +257,10 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Pagepkg.SearchPage&quot;/&gt;
       &lt;class name=&quot;Pagepkg.LinksPage&quot;/&gt;
-      &lt;class name=&quot;Pagepkg.RegPage&quot;/&gt;
+      &lt;class name=&quot;Pagepkg.SearchPage&quot;/&gt;
       &lt;class name=&quot;Testpage.ScreenshotTest&quot;/&gt;
+      &lt;class name=&quot;Pagepkg.RegPage&quot;/&gt;
       &lt;class name=&quot;Testpage.RegTest&quot;/&gt;
       &lt;class name=&quot;Pagepkg.LoginPage&quot;/&gt;
       &lt;class name=&quot;Pagepkg.Screenshotpage&quot;/&gt;
@@ -312,33 +312,33 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'links')
-data.setCell(0, 2, 'Testpage.LinksTest')
-data.setCell(0, 3, 58939);
+data.setCell(0, 1, 'Registration')
+data.setCell(0, 2, 'Testpage.RegTest')
+data.setCell(0, 3, 60735);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'datepicker')
-data.setCell(1, 2, 'Testpage.SearchpgTest')
-data.setCell(1, 3, 33517);
+data.setCell(1, 1, 'links')
+data.setCell(1, 2, 'Testpage.LinksTest')
+data.setCell(1, 3, 55590);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Registration')
-data.setCell(2, 2, 'Testpage.RegTest')
-data.setCell(2, 3, 30889);
+data.setCell(2, 1, 'datepicker')
+data.setCell(2, 2, 'Testpage.SearchpgTest')
+data.setCell(2, 3, 34341);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testScreenshot')
 data.setCell(3, 2, 'Testpage.ScreenshotTest')
-data.setCell(3, 3, 969);
+data.setCell(3, 3, 946);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'logoverification')
 data.setCell(4, 2, 'Testpage.HomepgTest')
-data.setCell(4, 3, 71);
+data.setCell(4, 3, 68);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'titleverification')
 data.setCell(5, 2, 'Testpage.HomepgTest')
-data.setCell(5, 3, 55);
+data.setCell(5, 3, 16);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'logintest')
 data.setCell(6, 2, 'Testpage.LoginTest')
-data.setCell(6, 3, 4);
+data.setCell(6, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -358,7 +358,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -366,11 +366,15 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Basepkg.BaseClass</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -380,11 +384,15 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Testpage.LoginTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -392,6 +400,8 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">Testpage.SearchpgTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -399,6 +409,8 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">Testpage.LinksTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -418,47 +430,54 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testScreenshot</span>
-                <span class="method-start">5891 ms</span>
+                <span class="method-start">4148 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpage.RegTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Registration</span>
-                <span class="method-start">6883 ms</span>
+                <span class="method-start">5107 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpage.LinksTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">links</span>
-                <span class="method-start">37782 ms</span>
+                <span class="method-start">65857 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpage.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">logintest</span>
-                <span class="method-start">96727 ms</span>
+                <span class="method-start">121457 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpage.HomepgTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">logoverification</span>
-                <span class="method-start">96731 ms</span>
+                <span class="method-start">121463 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">titleverification</span>
-                <span class="method-start">96805 ms</span>
+                <span class="method-start">121544 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpage.SearchpgTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">datepicker</span>
-                <span class="method-start">96862 ms</span>
+                <span class="method-start">121560 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testpage.ScreenshotTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">155903 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

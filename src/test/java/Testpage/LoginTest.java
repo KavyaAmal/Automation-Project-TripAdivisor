@@ -16,10 +16,12 @@ public class LoginTest extends BaseClass {
 		 String sheet = "sheet1";
 		 int rowcount= Excelutils.getRowCount(xl, sheet);
 		 System.out.println(rowcount);
+		 
 		 for(int i=1;i<=rowcount;i++)
 		 {
 			 String emailid = Excelutils.getCellValue(xl, sheet, i, 0);
 			 String password = Excelutils.getCellValue(xl, sheet, i, 1);
+			 
 			 loginobj.Login(emailid,password);
 			 loginobj.Loginclick();
 		 }

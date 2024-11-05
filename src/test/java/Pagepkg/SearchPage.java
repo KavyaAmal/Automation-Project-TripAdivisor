@@ -2,6 +2,7 @@ package Pagepkg;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,7 +17,6 @@ public class SearchPage {
 	    WebDriver driver;
 	 
 	    By searchbar = By.xpath("//input[@placeholder='Places to go, things to do, hotels...']");
-	    By searchbutton = By.xpath("//button[@type='submit']");
 	    By clubmahindra = By.xpath("//*[contains(text(),'Club Mahindra Munnar')]");
 	    By checkavailability = By.xpath("//*[contains(text(),'Check availability')]");
         By december = By.xpath("/html/body/div[3]/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div[2]/h2");
@@ -33,7 +33,7 @@ public class SearchPage {
 		        wait.until(ExpectedConditions.visibilityOfElementLocated(searchbar)).sendKeys("Club Mahindra Munnar");
 		        Actions actions = new Actions(driver);
 		        actions.sendKeys(Keys.ENTER).perform(); 
-		      //  wait.until(ExpectedConditions.elementToBeClickable(searchbutton)).click();
+		      
 		        wait.until(ExpectedConditions.visibilityOfElementLocated(clubmahindra)).click();
 		    } 
 		    catch (Exception e) 
@@ -43,13 +43,14 @@ public class SearchPage {
 		    
 		    // Wait for the new tab to open and switch to it
 		    wait.until(ExpectedConditions.numberOfWindowsToBe(2)); // Wait until two tabs are open
-	        String currentTab = driver.getWindowHandle(); // Get current tab handle
-	        
-	        for (String windowHandle : driver.getWindowHandles())
+	       
+		    String currentTab = driver.getWindowHandle(); // Get current tab handle
+		    Set<String> newTabs = driver.getWindowHandles();
+	        for (String newTab : newTabs )
 	        {
-	            if (!currentTab.equals(windowHandle)) 
+	            if (!currentTab.equals(newTab)) 
 	            {
-	                driver.switchTo().window(windowHandle); // Switch to the new tab
+	                driver.switchTo().window(newTab); // Switch to the new tab
 	                break;
 	            }
 	        }
@@ -89,18 +90,18 @@ public class SearchPage {
 		        catch (Exception e) 
 		        {
 		            System.out.println("Error while selecting month: " + e.getMessage());
-		            break; // Exit if an error occurs
+		            break; 
 		        }
 		    }
 
-		    // Selecting the date
+		    
 		    List<WebElement> dateDetails = driver.findElements(By.xpath("//*[contains(@class, 'VVyhTp f j c z _S V wSSLS VNPcF gIglQ')]"));
 		    for (WebElement date : dateDetails)
 		    {
 		        String d = date.getText();
 		        if (expdate.equals(d)) 
 		        {
-		            date.click(); // Click the expected date
+		            date.click(); 
 		            break;
 		        }
 		    }
