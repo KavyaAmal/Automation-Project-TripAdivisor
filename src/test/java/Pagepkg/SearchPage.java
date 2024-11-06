@@ -41,16 +41,16 @@ public class SearchPage {
 		        System.out.println("Error during search: " + e.getMessage());
 		    }
 		    
-		    // Wait for the new tab to open and switch to it
-		    wait.until(ExpectedConditions.numberOfWindowsToBe(2)); // Wait until two tabs are open
+		    
+		    wait.until(ExpectedConditions.numberOfWindowsToBe(2)); 
 	       
-		    String currentTab = driver.getWindowHandle(); // Get current tab handle
+		    String currentTab = driver.getWindowHandle(); 
 		    Set<String> newTabs = driver.getWindowHandles();
 	        for (String newTab : newTabs )
 	        {
 	            if (!currentTab.equals(newTab)) 
 	            {
-	                driver.switchTo().window(newTab); // Switch to the new tab
+	                driver.switchTo().window(newTab); 
 	                break;
 	            }
 	        }

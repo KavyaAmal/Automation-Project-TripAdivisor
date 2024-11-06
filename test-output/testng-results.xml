@@ -1,55 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="19" passed="7" failed="0" skipped="0">
+<testng-results ignored="12" total="19" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T00:44:22 IST" name="Default suite" finished-at="2024-11-06T00:46:59 IST" duration-ms="156573">
+  <suite started-at="2024-11-06T15:34:08 IST" name="Default suite" finished-at="2024-11-06T15:36:44 IST" duration-ms="155627">
     <groups>
     </groups>
-    <test started-at="2024-11-06T00:44:22 IST" name="Default test" finished-at="2024-11-06T00:46:59 IST" duration-ms="156573">
+    <test started-at="2024-11-06T15:34:08 IST" name="Default test" finished-at="2024-11-06T15:36:44 IST" duration-ms="155627">
       <class name="Testpage.HomepgTest">
-        <test-method signature="logoverification()[pri:0, instance:Testpage.HomepgTest@5b12b668]" started-at="2024-11-06T00:46:24 IST" name="logoverification" finished-at="2024-11-06T00:46:24 IST" duration-ms="68" status="PASS">
+        <test-method signature="logoverification()[pri:0, instance:Testpage.HomepgTest@1165b38]" started-at="2024-11-06T15:35:12 IST" name="logoverification" finished-at="2024-11-06T15:35:43 IST" duration-ms="30410" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='lithium-root']/span/header/div/nav/div[1]/a/picture[2]/img (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\kvjos\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58649/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0bacc126dafb1f3df300a7de5fc23ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='lithium-root']/span/header/div/nav/div[1]/a/picture[2]/img (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\kvjos\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58649/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0bacc126dafb1f3df300a7de5fc23ae
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pagepkg.HomePage.logo(HomePage.java:35)
+at Testpage.HomepgTest.logoverification(HomepgTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoverification -->
-        <test-method signature="titleverification()[pri:0, instance:Testpage.HomepgTest@5b12b668]" started-at="2024-11-06T00:46:24 IST" name="titleverification" finished-at="2024-11-06T00:46:24 IST" duration-ms="16" status="PASS">
+        <test-method signature="titleverification()[pri:0, instance:Testpage.HomepgTest@1165b38]" started-at="2024-11-06T15:35:43 IST" name="titleverification" finished-at="2024-11-06T15:35:43 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleverification -->
       </class> <!-- Testpage.HomepgTest -->
       <class name="Testpage.ScreenshotTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testpage.ScreenshotTest@3c41ed1d]" started-at="2024-11-06T00:44:22 IST" name="setUp" finished-at="2024-11-06T00:44:26 IST" duration-ms="4105" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testpage.ScreenshotTest@54d9d12d]" started-at="2024-11-06T15:34:08 IST" name="setUp" finished-at="2024-11-06T15:34:27 IST" duration-ms="18128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testScreenshot()[pri:0, instance:Testpage.ScreenshotTest@3c41ed1d]" started-at="2024-11-06T00:44:26 IST" name="testScreenshot" finished-at="2024-11-06T00:44:27 IST" duration-ms="946" status="PASS">
+        <test-method signature="testScreenshot()[pri:0, instance:Testpage.ScreenshotTest@54d9d12d]" started-at="2024-11-06T15:34:27 IST" name="testScreenshot" finished-at="2024-11-06T15:34:27 IST" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testpage.ScreenshotTest@3c41ed1d]" started-at="2024-11-06T00:46:58 IST" name="tearDown" finished-at="2024-11-06T00:46:59 IST" duration-ms="650" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testpage.ScreenshotTest@54d9d12d]" started-at="2024-11-06T15:36:43 IST" name="tearDown" finished-at="2024-11-06T15:36:44 IST" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Testpage.ScreenshotTest -->
       <class name="Testpage.RegTest">
-        <test-method signature="Registration()[pri:0, instance:Testpage.RegTest@2d1ef81a]" started-at="2024-11-06T00:44:27 IST" name="Registration" finished-at="2024-11-06T00:45:28 IST" duration-ms="60735" status="PASS">
+        <test-method signature="Registration()[pri:0, instance:Testpage.RegTest@4c402120]" started-at="2024-11-06T15:34:27 IST" name="Registration" finished-at="2024-11-06T15:35:05 IST" duration-ms="37979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
       </class> <!-- Testpage.RegTest -->
       <class name="Testpage.SearchpgTest">
-        <test-method signature="datepicker()[pri:0, instance:Testpage.SearchpgTest@1165b38]" started-at="2024-11-06T00:46:24 IST" name="datepicker" finished-at="2024-11-06T00:46:58 IST" duration-ms="34341" status="PASS">
+        <test-method signature="datepicker()[pri:0, instance:Testpage.SearchpgTest@4c12331b]" started-at="2024-11-06T15:35:43 IST" name="datepicker" finished-at="2024-11-06T15:36:43 IST" duration-ms="60528" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for number of open windows to be 2 (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\kvjos\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58649/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0bacc126dafb1f3df300a7de5fc23ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of open windows to be 2 (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\kvjos\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58649/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0bacc126dafb1f3df300a7de5fc23ae
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Pagepkg.SearchPage.search(SearchPage.java:45)
+at Testpage.SearchpgTest.datepicker(SearchpgTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datepicker -->
       </class> <!-- Testpage.SearchpgTest -->
       <class name="Testpage.LinksTest">
-        <test-method signature="links()[pri:0, instance:Testpage.LinksTest@4c402120]" started-at="2024-11-06T00:45:28 IST" name="links" finished-at="2024-11-06T00:46:24 IST" duration-ms="55590" status="PASS">
+        <test-method signature="links()[pri:0, instance:Testpage.LinksTest@327514f]" started-at="2024-11-06T15:35:05 IST" name="links" finished-at="2024-11-06T15:35:12 IST" duration-ms="7094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- links -->
       </class> <!-- Testpage.LinksTest -->
       <class name="Testpage.LoginTest">
-        <test-method signature="logintest()[pri:0, instance:Testpage.LoginTest@327514f]" started-at="2024-11-06T00:46:24 IST" name="logintest" finished-at="2024-11-06T00:46:24 IST" duration-ms="0" status="PASS">
+        <test-method signature="logintest()[pri:0, instance:Testpage.LoginTest@5b12b668]" started-at="2024-11-06T15:35:12 IST" name="logintest" finished-at="2024-11-06T15:35:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->

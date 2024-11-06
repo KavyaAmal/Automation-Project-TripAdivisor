@@ -19,7 +19,7 @@ public class RegPage {
     By emailid = By.id("regSignUp.email");
     By password = By.id("regSignUp.password");
     By joinbutton = By.id("regSignUp.submit");
-    By iframeLocator = By.id("google_ads_top_frame"); 
+    By iframeLocator = By.xpath("//iframe[@title='regcontroller']"); 
     
     public RegPage(WebDriver driver)
     {

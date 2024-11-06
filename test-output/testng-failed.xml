@@ -5,7 +5,6 @@
     <classes>
       <class name="Testpage.HomepgTest">
         <methods>
-          <include name="titleverification"/>
           <include name="setUp"/>
           <include name="logoverification"/>
           <include name="tearDown"/>
@@ -18,20 +17,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Testpage.SearchpgTest -->
-      <class name="Testpage.LinksTest">
-        <methods>
-          <include name="links"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Testpage.LinksTest -->
-      <class name="Testpage.ScreenshotTest">
-        <methods>
-          <include name="testScreenshot"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Testpage.ScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
